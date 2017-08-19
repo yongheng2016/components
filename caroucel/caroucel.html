@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>banner组件</title>
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_g1rcmwav06qrggb9.css">
+  <style>
+    body {
+      background: #2C2A2A;
+    }
+    ul, ol {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .container {
+      position: relative;
+      width: 600px;
+      height: 300px;
+      overflow: hidden;
+      margin: 100px auto;
+      padding: 20px;
+      background: #eee;
+      border-radius: 5px;
+    }
+    .container>.caroucel {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      display: flex;
+      justify-content: left;
+    }
+    .container>.caroucel>li {
+      display: none;
+    }
+    .container>.caroucel>li.show {
+      display: block;
+      background: #aaa;
+    }
+    .container>.caroucel>li img {
+      vertical-align: top;
+      width: 600px;
+      height: 300px;
+    }
+    .container>.data-target {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 30px;
+      text-align: center;
+      width: 100%;
+    }
+    .container>.data-target>li {
+      display: inline-block;
+      width: 40px;
+      height: 5px;
+      border-radius: 5px;
+      background: transparent;
+      border: 1px solid #fff;
+    }
+    .container>.data-target>li:first-child {
+      margin-left: 0;
+    }
+    .container>.data-target>li.slide {
+      background: #fff;
+    }
+    .caroucel-control {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 35px;
+      height: 35px;
+      border: 1px solid #fff; 
+      border-radius: 50%;
+      color: #fff;
+      line-height: 35px;
+      text-align: center;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+    }
+    .caroucel-control.next {
+      right: 25px;
+    }
+    .caroucel-control.next:before {
+      content: '\e6ef';
+      font-family: 'iconfont';
+      font-size: 20px;
+      color: #fff;
+    }
+    .caroucel-control.previous {
+      left: 25px;
+    }
+    .caroucel-control.previous:before {
+      content: '\e669';
+      font-family: 'iconfont';
+      font-size: 20px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <ul class="caroucel">
+      <li class="show"><img src="http://wx1.sinaimg.cn/mw690/b9d0abb5ly1fiktci6xsbj20xc0goaam.jpg" alt=""></li>
+      <li><img src="http://wx3.sinaimg.cn/mw690/b9d0abb5ly1fiktbmbyw0j20xc0gowfk.jpg" alt=""></li>
+      <li><img src="http://wx2.sinaimg.cn/mw690/b9d0abb5ly1fiktbejauvj20xc0go0ww.jpg" alt=""></li>
+      <li><img src="http://wx3.sinaimg.cn/mw690/b9d0abb5ly1fiktb6rrxvj20xc0gognx.jpg" alt=""></li>
+    </ul>
+    <ol class="data-target">
+      <li class="slide"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+      <div class="previous caroucel-control"></div>
+      <div class="next caroucel-control"></div>
+
+  </div>
+  <div class="container">
+    <ul class="caroucel">
+      <li class="show"><img src="http://wx3.sinaimg.cn/mw690/b9d0abb5ly1fiktb6rrxvj20xc0gognx.jpg" alt=""></li>
+      <li><img src="http://wx2.sinaimg.cn/mw690/b9d0abb5ly1fiktcq6qu0j20xc0gowfh.jpg" alt=""></li>
+      <li><img src="http://wx2.sinaimg.cn/mw690/b9d0abb5ly1fiktck1xh4j20xc0go429.jpg" alt=""></li>
+      <li><img src="http://wx4.sinaimg.cn/mw690/b9d0abb5ly1fiktciw3x1j20xc0godiw.jpg" alt=""></li>
+      <li><img src="http://wx1.sinaimg.cn/mw690/b9d0abb5ly1fiktci6xsbj20xc0goaam.jpg" alt=""></li>
+      <li><img src="http://wx3.sinaimg.cn/mw690/b9d0abb5ly1fiktchfxv3j20xc0goad6.jpg" alt=""></li>
+      <li><img src="http://wx3.sinaimg.cn/mw690/b9d0abb5ly1fiktceosdij20xc0gojun.jpg" alt=""></li>
+      <li><img src="http://wx1.sinaimg.cn/mw690/b9d0abb5ly1fiktc6tjq4j20xc0gowi7.jpg" alt=""></li>
+      <li><img src="http://wx1.sinaimg.cn/mw690/b9d0abb5ly1fiktc20j8uj20xc0go403.jpg" alt=""></li>
+      <li><img src="http://wx4.sinaimg.cn/mw690/b9d0abb5ly1fiktbuxyeyj20xc0gowg2.jpg" alt=""></li>
+      <li><img src="http://wx3.sinaimg.cn/mw690/b9d0abb5ly1fiktbmbyw0j20xc0gowfk.jpg" alt=""></li>
+      <li><img src="http://wx2.sinaimg.cn/mw690/b9d0abb5ly1fiktbejauvj20xc0go0ww.jpg" alt=""></li>
+    </ul>
+    <ol class="data-target">
+      <li class="slide"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+      <div class="previous caroucel-control"></div>
+      <div class="next caroucel-control"></div>
+  </div>
+  <div class="container">
+    <ul class="caroucel">
+      <li class="show"><img src="http://wx2.sinaimg.cn/mw690/b9d0abb5ly1fiktbejauvj20xc0go0ww.jpg" alt=""></li>
+      <li><img src="http://wx4.sinaimg.cn/mw690/b9d0abb5ly1fiktb7b0w2j20xc0go3zs.jpg" alt=""></li>
+      <li><img src="https://unsplash.it/600/300/?gravity=south" alt=""></li>
+      <li><img src="http://wx3.sinaimg.cn/mw690/b9d0abb5ly1fiktb6rrxvj20xc0gognx.jpg" alt=""></li>
+      <li><img src="http://wx3.sinaimg.cn/mw690/b9d0abb5ly1fiktazlu3ej20xc0goq4j.jpg" alt=""></li>
+    </ul>
+    <ol class="data-target">
+      <li class="slide"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+      <div class="previous caroucel-control"></div>
+      <div class="next caroucel-control"></div>
+  </div>
+  <div class="container">
+    <ul class="caroucel">
+      <li class="show"><img src="http://wx2.sinaimg.cn/mw690/b9d0abb5ly1fiktck1xh4j20xc0go429.jpg" alt=""></li>
+      <li><img src="http://wx4.sinaimg.cn/mw690/b9d0abb5ly1fiktciw3x1j20xc0godiw.jpg" alt=""></li>
+      <li><img src="http://wx1.sinaimg.cn/mw690/b9d0abb5ly1fiktci6xsbj20xc0goaam.jpg" alt=""></li>
+      <li><img src="https://unsplash.it/600/300/?gravity=north" alt=""></li>
+      <li><img src="http://wx3.sinaimg.cn/mw690/b9d0abb5ly1fiktbmbyw0j20xc0gowfk.jpg" alt=""></li>
+      <li><img src="http://wx2.sinaimg.cn/mw690/b9d0abb5ly1fiktbejauvj20xc0go0ww.jpg" alt=""></li>
+    </ul>
+    <ol class="data-target">
+      <li class="slide"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+      <div class="previous caroucel-control"></div>
+      <div class="next caroucel-control"></div>
+  </div>
+
+  <script src='./caroucel.js'></script>
+</body>
+</html>

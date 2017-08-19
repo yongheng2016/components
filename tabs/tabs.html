@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>tab组件</title>
+  <style>
+    body {
+      background: rgb(44, 42, 42);
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .clearfix:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .ct {
+      width: 510px;
+      margin: 50px auto;
+    }
+    .container {
+      width: 510px;
+      margin-bottom: 70px;
+      box-shadow: 2px 5px 15px 2px #aaa;
+      border-radius: 2px 30px 5px 5px/2px 25px 5px 5px;
+      overflow: hidden;
+      color: #fff;
+    }
+    .tabs {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .tabs>li {
+      border-right: 0;
+      padding: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+      text-align: center;
+      border-radius: 50%;
+      box-shadow: 1px 1px 5px #eee;
+      cursor: default;
+    }
+    .tabs>li:last-child {
+      border-right: 1px solid green;
+    }
+    .tabs>li.active {
+      border-bottom: 0;
+      color: #000;
+      background-color: #fff;
+    }
+    .contents {
+      margin: 30px;
+    }
+    .contents>li {
+      display: none;
+      height: 200px;
+      border-top: 0;
+      background-color: rgb(39, 150, 166);
+    }
+    .contents>li>img {
+      width: 450px;
+      height: 200px;
+    }
+    .contents>li.show {
+      display: block;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="ct">
+    <div class="container">
+        <ul class="tabs">
+          <li class="active">tab1</li>
+          <li>tab2</li>
+          <li>tab3</li>
+        </ul>
+        <ul class="contents clearfix">
+          <li class="show"><img src="http://wx2.sinaimg.cn/mw690/b9d0abb5ly1fiktbejauvj20xc0go0ww.jpg" alt=""></li>
+          <li><img src="http://wx3.sinaimg.cn/mw690/b9d0abb5ly1fiktb6rrxvj20xc0gognx.jpg" alt=""></li>
+          <li><img src="http://wx3.sinaimg.cn/mw690/b9d0abb5ly1fiktazlu3ej20xc0goq4j.jpg" alt=""></li>
+        </ul>
+    </div>
+
+      <div class="container">
+        <ul class="tabs">
+          <li>tab1</li>
+          <li class="active">tab2</li>
+          <li>tab3</li>
+          <li>tab4</li>
+        </ul>
+        <ul class="contents clearfix">
+          <li><img src="http://wx2.sinaimg.cn/mw690/b9d0abb5ly1fiktck1xh4j20xc0go429.jpg" alt=""></li>
+          <li class="show"><img src="http://wx4.sinaimg.cn/mw690/b9d0abb5ly1fiktciw3x1j20xc0godiw.jpg" alt=""></li>
+          <li><img src="http://wx1.sinaimg.cn/mw690/b9d0abb5ly1fiktci6xsbj20xc0goaam.jpg" alt=""></li>
+          <li><img src="http://wx3.sinaimg.cn/mw690/b9d0abb5ly1fiktchfxv3j20xc0goad6.jpg" alt=""></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <ul class="tabs">
+          <li>tab1</li>
+          <li>tab2</li>
+          <li>tab3</li>
+          <li class="active">tab4</li>
+          <li>tab5</li>
+        </ul>
+        <ul class="contents clearfix">
+          <li><img src="http://wx3.sinaimg.cn/mw690/b9d0abb5ly1fiktceosdij20xc0gojun.jpg" alt=""></li>
+          <li><img src="http://wx1.sinaimg.cn/mw690/b9d0abb5ly1fiktc6tjq4j20xc0gowi7.jpg" alt=""></li>
+          <li><img src="http://wx1.sinaimg.cn/mw690/b9d0abb5ly1fiktc20j8uj20xc0go403.jpg" alt=""></li>
+          <li class="show"><img src="http://wx4.sinaimg.cn/mw690/b9d0abb5ly1fiktbuxyeyj20xc0gowg2.jpg" alt=""></li>
+          <li><img src="http://wx4.sinaimg.cn/mw690/b9d0abb5ly1fiktb7b0w2j20xc0go3zs.jpg" alt=""></li>
+        </ul>
+    </div>
+  </div>
+  <script src="./tabs.js"></script>
+</body>
+</html>
