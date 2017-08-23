@@ -1,7 +1,7 @@
 # components
 
 ## caroucel
-[js](https://github.com/yongheng2016/components/blob/master/caroucel/caroucel.js)   
+[js](https://github.com/yongheng2016/components/blob/master/caroucel/caroucel.js)     
 [预览](https://yongheng2016.github.io/components/caroucel/caroucel.html)
 
 ## exporsure
