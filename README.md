@@ -1,11 +1,11 @@
 # components
 
 ## caroucel
-[组件](https://github.com/yongheng2016/components/blob/master/caroucel/caroucel.js)
+[组件](https://github.com/yongheng2016/components/blob/master/caroucel/caroucel.js)  
 [预览](https://yongheng2016.github.io/components/caroucel/caroucel.html)
 
 ## exporsure
-[]()
+[组件](https://github.com/yongheng2016/components/blob/master/exporsure/exporsure.js)  
 [预览](https://yongheng2016.github.io/components/exporsure/exporsure.html)
 
 ## tabs
